@@ -1,0 +1,62 @@
+{
+  "_from": "cordova-plugin-files-downloader",
+  "_id": "cordova-plugin-files-downloader@0.0.6",
+  "_inBundle": false,
+  "_integrity": "sha512-Ecao9f1t0a0iRQkiq411AAhjmNQ2220aZs0F8pedmOO/ZKODHzzqSBPaxtRAt7RCFWIlUuUjDws862HPmiV5rw==",
+  "_location": "/cordova-plugin-files-downloader",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-files-downloader",
+    "name": "cordova-plugin-files-downloader",
+    "escapedName": "cordova-plugin-files-downloader",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-files-downloader/-/cordova-plugin-files-downloader-0.0.6.tgz",
+  "_shasum": "3e6fcb6b48bff378326cf4259b73725f413fac5f",
+  "_spec": "cordova-plugin-files-downloader",
+  "_where": "C:\\Users\\julien-beauverd\\Documents\\GitHub\\MyPWA",
+  "author": {
+    "name": "Marek Nowakowski",
+    "email": "info@intrasoft.eu"
+  },
+  "bugs": {
+    "url": "https://github.com/intrasoft-eu/cordova-plugin-files-downloader/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-files-downloader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "An Android Cordova plugin that allows you to download files using download manager.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/intrasoft-eu/cordova-plugin-files-downloader/",
+  "keywords": [
+    "Files",
+    "Downloader",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0 License",
+  "name": "cordova-plugin-files-downloader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intrasoft-eu/cordova-plugin-files-downloader.git"
+  },
+  "version": "0.0.6"
+}

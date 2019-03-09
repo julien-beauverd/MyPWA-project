@@ -27,11 +27,31 @@
             {
               "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"md5chksum\"><param name=\"android-package\" value=\"com.manuelramonlopez.cordova.plugins.md5chksum\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FilesDownloader\"><param name=\"android-package\" value=\"eu.intrasoft.cordova.filesdownloader.FilesDownloader\" /></feature>",
+              "count": 1
             }
           ],
           "/widget": [
             {
               "xml": "<feature name=\"FileChooser\"><param name=\"android-package\" value=\"eu.droidit.filechooser.FileChooser\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Zip\"><param name=\"android-package\" value=\"org.apache.cordova.Zip\" /></feature>",
               "count": 1
             }
           ]
@@ -43,6 +63,14 @@
             {
               "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
               "count": 2
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+              "count": 1
             }
           ],
           "/manifest": [
@@ -75,6 +103,24 @@
       "PACKAGE_NAME": "io.cordova.hellocordova"
     },
     "cordova-filechooser": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-zip": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-file-md5": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-file-downloader": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-files-downloader": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
     }
   },
@@ -285,6 +331,63 @@
       "clobbers": [
         "fileChooser"
       ]
+    },
+    {
+      "id": "cordova-plugin-network-information.network",
+      "file": "plugins/cordova-plugin-network-information/www/network.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "navigator.connection",
+        "navigator.network.connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-network-information.Connection",
+      "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+      "pluginId": "cordova-plugin-network-information",
+      "clobbers": [
+        "Connection"
+      ]
+    },
+    {
+      "id": "cordova-plugin-zip.Zip",
+      "file": "plugins/cordova-plugin-zip/zip.js",
+      "pluginId": "cordova-plugin-zip",
+      "clobbers": [
+        "zip"
+      ]
+    },
+    {
+      "id": "cordova-plugin-file-md5.md5chksum",
+      "file": "plugins/cordova-plugin-file-md5/www/md5chksum.js",
+      "pluginId": "cordova-plugin-file-md5",
+      "clobbers": [
+        "md5chksum"
+      ]
+    },
+    {
+      "id": "cordova-plugin-file-downloader.downloader",
+      "file": "plugins/cordova-plugin-file-downloader/www/downloader.min.js",
+      "pluginId": "cordova-plugin-file-downloader",
+      "clobbers": [
+        "downloader"
+      ]
+    },
+    {
+      "id": "cordova-plugin-android-permissions.Permissions",
+      "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
+      "pluginId": "cordova-plugin-android-permissions",
+      "clobbers": [
+        "cordova.plugins.permissions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-files-downloader.FilesDownloader",
+      "file": "plugins/cordova-plugin-files-downloader/www/FilesDownloader.js",
+      "pluginId": "cordova-plugin-files-downloader",
+      "clobbers": [
+        "FilesDownloader"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -292,6 +395,12 @@
     "cordova-plugin-file": "6.0.1",
     "cordova-plugin-document-viewer": "0.9.10",
     "cordova-plugin-file-transfer": "1.7.1",
-    "cordova-filechooser": "1.0.3"
+    "cordova-filechooser": "1.0.3",
+    "cordova-plugin-network-information": "2.0.1",
+    "cordova-plugin-zip": "3.1.0",
+    "cordova-plugin-file-md5": "0.3.3",
+    "cordova-plugin-file-downloader": "0.4.0",
+    "cordova-plugin-android-permissions": "1.0.0",
+    "cordova-plugin-files-downloader": "0.0.6"
   }
 }
